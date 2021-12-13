@@ -2,6 +2,7 @@ import React from "react";
 import TubeLight from "../images/tubelight.png";
 import LedLight from "../images/ledlight.png";
 import LedHighBay from "../images/ledhighbay.png";
+import {Link} from "react-router-dom";
 
 const Products = () => {
   return (
@@ -16,30 +17,36 @@ const Products = () => {
       </div>
 
       <div className="row justify-content-center mb-5 mt-3">
-        <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3 ms-3 border mt-3 my-card">
+        <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={TubeLight} className="img-fluid card-image" alt="" />
-          <p className="quick-shop">Quick Shop</p>
+          <div className="quickShop">
+          <Link className="productLink" to="/tubelight">Quick Shop</Link>
+          </div>
           <p className="text-uppercase">old faithful shop</p>
           <h4>Tube Light</h4>
         </div>
-        <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3 ms-3 border mt-3 my-card">
+        <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={LedLight} className="img-fluid card-image" alt="" />
-          <p className="quick-shop">Quick Shop</p>
+          <div className="quickShop">
+          <Link className="productLink" to="/streetlight">Quick Shop</Link>
+          </div>
           <p className="text-uppercase">old faithful shop</p>
           <h4>Street Light</h4>
         </div>
-        <div className="col-md-3 col-8 justify-item-center text-center pt-3 pb-3 ms-3 border mt-3 my-card">
+        <div className="col-md-3 col-8 justify-item-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={LedHighBay} className="img-fluid card-image" alt="" />
-          <p className="quick-shop">Quick Shop</p>
+          <div className="quickShop">
+          <Link className="productLink" to="/highbaylight">Quick Shop</Link>
+          </div>
           <p className="text-uppercase">old faithful shop</p>
-          <h4>HIgh bay Light</h4>
+          <h4>High bay Light</h4>
         </div>
       </div>
       <div class="view-more">
-        <a href="#">
+        <Link to="/viewmore">
           View More
           <i class="bi bi-arrow-right" style={{fontSize: "35px;"}}></i>
-        </a>
+        </Link>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from "react";
 import LedTubeLight from "../images/ledtubelight.png";
+import Logo from "../images/logo.png";
 
 const Footer = () => {
     return(
@@ -8,7 +9,7 @@ const Footer = () => {
       <div class="col-md-3 mt-3">
         <div class="row">
           <div class="col-12">
-            <img src="./images/logo.png" class="img-fluid footer-logo" alt="" />
+            <img src={Logo} class="img-fluid footer-logo" alt="" />
           </div>
         </div>
         <div class="row">

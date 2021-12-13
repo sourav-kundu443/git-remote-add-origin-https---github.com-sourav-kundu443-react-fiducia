@@ -7,6 +7,13 @@
   position: absolute;
   top: 0;
 }
+.navLinks {
+  justify-content: flex-end;
+  font-size: 18px;
+}
+.navLinks li {
+  margin: 0 3px;
+}
 
 .my-container {
   padding-top: 200px;
@@ -62,17 +69,20 @@
   font-weight: 600;
 }
 
-.quick-shop {
+.quickShop {
   opacity: 0;
   background-color: #431C75CC;
   width: 100%;
-  color: #ffffff;
   padding: 5px 0;
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }
+.quickShop .productLink {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-.my-card:hover > .quick-shop {
+.my-card:hover > .quickShop {
   opacity: 1;
 }
 
