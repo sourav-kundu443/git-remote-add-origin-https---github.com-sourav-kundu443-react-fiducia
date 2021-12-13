@@ -1,38 +1,294 @@
-.App {
+.banner-image {
+  background: url("./images/heroscreen.png");
+  background-size: cover;
+}
+
+.my-navbar {
+  position: absolute;
+  top: 0;
+}
+
+.my-container {
+  padding-top: 200px;
+  color: #ffffff;
+}
+
+.my-container h3 {
+  font-size: 35px;
+}
+.my-container p {
+  font-size: 12px;
+}
+.my-btn {
+  background-color: #FF5722;
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.stats-row {
+  background-color: #f1f1f1;
+}
+
+.stats-column {
+  /* padding: 10px 0; */
+  padding-top: 15px;
+  border-radius: 15px;
+}
+
+#brands-served {
+  border: 2px solid #0871FF;
+}
+#brands-served h4 {
+  color: #0871FF;
+  font-weight: 600;
+}
+#product-delivered {
+  border: 2px solid #5F27CD;
+  
+}
+#product-delivered h4 {
+  color: #5F27CD;
+  font-weight: 600;
+}
+#styles-manufectured {
+  border: 2px solid #FD6B00;
+}
+#styles-manufectured h4 {
+  color: #FD6B00;
+  font-weight: 600;
+}
+
+.quick-shop {
+  opacity: 0;
+  background-color: #431C75CC;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+
+.my-card:hover > .quick-shop {
+  opacity: 1;
+}
+
+.view-more {
+ 
+  text-align: center;
+  margin-bottom: 20px;
+}
+.view-more a {
+  text-decoration: none;
+  color: #FD6B00;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ownership {
+  background-color: #C1A0EDE5;
+}
+
+.sm-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.sm-card img {
+  margin: 10px 0 5px 0;
+}
+.sm-card h5 {
+  color: #FF5722;
+  margin: 0 0 5px 0;
+}
+.sm-card p {
+  font-size: 11px;
+}
+#my-arrow{
+  background-color: #5F27CD;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 5px 0 0 0;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+
+.my-footer {
+  background-color: #0F1120;
+}
+.my-footer h5 {
+  color: #FD6B00;
+  margin-bottom: 5px;
+}
+.my-footer p{
+  font-size: 12px;
+}
+.social-icons {
+  font-size: 22px;
+  margin-left: 5px;
+}
+#facebook {
+  color: #4267B2;
+}
+#linkedin {
+  color: #0E76A8;
+}
+#twitter {
+  color: #1DA1F2;
+}
+#youtube {
+  color: #FF0000;
+}
+.my-copyright {
+  background-color: #1A1F2A;
+  color: #ffffff;
+  padding-top: 5px;
+  font-size: 14px;
+}
+.newsletter {
+  width: 90%;
+}
+.email-newsletter {
+  width: 90%;
+  height: 35px;
+  border-radius: 30px;
+  position: relative;
+}
+.email-newsletter input {
+  width: 100%;
+  height: 35px;
+  display: block;
+  border-radius: 30px;
+  border: none;
+  background-color: #252429;
+  padding: 0 10px;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  outline: none;
+  color: #999999;
+}
+
+.newsletter-button {
+  position: absolute;
+  right: 1.5%;
+  top: 0%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: #FF5722;
+  background-color: #000000;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2.5px;
+}
+
+.lower-section {
+  width: 100%;
+  background: url(./images/lower.jpg);
+  padding: 50px 0;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lower-section p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.my-footer .footer-logo {
+  width: 200px;
+}
+
+.insta-img {
+  width: 70px;
+}
+.logo-image{
+  width: 200px;
+}
+@media only screen and (max-width: 768px){
+  #my-arrow {
+      opacity: 0;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .my-container h1 {
+      font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .my-btn {
+      font-size: 15px !important;
   }
+  .email-newsletter {
+      width: 100%;
+  }
+  .my-footer .footer-logo {
+      width: 130px;
+  }
+  
+  .insta-img {
+      width: 70px;
+  }
+
+  .my-container {
+      text-align: center;
+  }
+
+  .navbar-toggler {
+      padding: 0%;
+  }
+  
 }
+
+@media only screen and (max-width: 520px){
+  #my-slide {
+      margin-top: 20px;
+  }
+
+  #my-banner-text{
+      width: 100%;
+  }
+  .my-container h3 {
+      font-size: 20px;
+      margin-bottom: 3px;
+  }
+  .my-container p {
+      font-size: 11px;
+      margin-top: 0;
+      margin-bottom: 10px !important;
+  }
+  .my-btn{
+      font-size: 16px;
+  }
+  .logo-image{
+      width: 120px;
+      margin: 15px 0 10px 0;
+      /* size: 60%; */
+  }
+  .my-footer .footer-logo {
+      width: 90px;
+  }
+  
+}
+@media only screen and (max-width: 992px){
+  #my-arrow {
+      display: none;
+  }
+  
+}
+/* 
+@media screen and (max-width: 1200px){
+  .nav-menu {
+      margin: 0 50px;
+  }
+} */
