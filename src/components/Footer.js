@@ -2,6 +2,7 @@ import React from "react";
 import LedTubeLight from "../images/ledtubelight.png";
 import Logo from "../images/logo.png";
 import { Link } from "react-router-dom"
+import data from '../data.json';
 
 const Footer = () => {
   return (
@@ -42,7 +43,7 @@ const Footer = () => {
         <div className="col-md-3 mt-3">
           <div className="row">
             <div className="col-md-12">
-              <h5>Gallery</h5>
+              <h5>{data.gallery}</h5>
               <div classNameName="footer-images">
                 <Link to="/insta1">
                   <img src={LedTubeLight} className="img-fluid mt-2 insta-img" alt="" />
@@ -72,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" newsletter">
-            <h5>Newsletter</h5>
+            <h5>{data.newsletter}</h5>
             <div className="email-newsletter mt-3 mb-3">
               <input type="email" name="email" id="" placeholder="Enter email here" />
               <button type="submit" className="newsletter-button rounded-circle">
@@ -82,37 +83,37 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-md-4 mt-3 mb-4">
-          <h5>Useful Links</h5>
-          <div classNameName="footer-link">
+          <h5>{data.usefulllinks}</h5>
+          <div classNameName="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white" to="/">Home</Link>
+            <Link className="text-white footer-link" to="/">{data.home}</Link>
           </div>
-          <div className="footer-link">
+          <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white " to="/aboutus">About Us</Link>
+            <Link className="text-white footer-link" to="/aboutus">{data.aboutus}</Link>
           </div>
-          <div className="footer-link">
+          <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white" to="/productconfigurator">Product Configurator</Link>
+            <Link className="text-white footer-link" to="/productconfigurator">{data.productfigurator}</Link>
           </div>
-          <div className="footer-link">
+          <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white" to="/contactus">Contact Us</Link>
+            <Link className="text-white footer-link" to="/contactus">{data.contactus}</Link>
           </div>
-          <div className="footer-link">
+          <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white" to="/support">Support</Link>
+            <Link className="text-white footer-link" to="/support">{data.support}</Link>
           </div>
           <div>
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/feedback">Feedback</Link>
+            <Link className="text-white footer-link" to="/feedback">{data.feedback}</Link>
           </div>
         </div>
       </div>
 
       <div className="row my-copyright">
         <div className="col-12 text-center">
-          <p>Copyright © 2021 FIDUCIA. All Rights Reserved</p>
+          <p>{data.copyright}</p>
         </div>
       </div>
     </div>

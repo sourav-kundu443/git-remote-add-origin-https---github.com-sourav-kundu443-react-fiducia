@@ -115,8 +115,7 @@
 .sm-card {
   background-color: #ffffff;
   border-radius: 15px;
-  width: 200px;
-  height: 200px;
+  margin: 0 10px;
 }
 
 .sm-card img {
@@ -233,7 +232,7 @@
   width: 200px;
 }
 .footer-link{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .my-footer{
   display: flex;
@@ -241,9 +240,6 @@
 }
 
 @media only screen and (max-width: 768px){
-  .my-arrow {
-      display: none;
-  }
 
   .my-container h1 {
       font-size: 25px;
@@ -271,6 +267,15 @@
       padding: 0%;
   }
   
+  .sm-card p {
+    font-size: 8px;
+  }
+  .sm-card h5 {
+    font-size: 12px;
+  }
+  .sm-card img {
+    width: 30px;
+  }
 }
 
 @media only screen and (max-width: 520px){
@@ -285,17 +290,22 @@
       font-size: 20px;
       margin-bottom: 3px;
   }
+  
   .my-container p {
       font-size: 11px;
       margin-top: 0;
       margin-bottom: 10px !important;
   }
+
   .my-btn{
       font-size: 16px;
   }
   .logo-image{
       width: 120px;
       margin: 15px 0 10px 0;
+  }
+  .my-arrow{
+    display: none;
   }
   .my-footer .footer-logo {
       width: 90px;
@@ -306,9 +316,6 @@
   
 }
 
-@media only screen and (max-width: 992px){
-  .my-arrow {
-      display: none;
-  }
+/* @media only screen and (max-width: 992px){
   
-}
+} */

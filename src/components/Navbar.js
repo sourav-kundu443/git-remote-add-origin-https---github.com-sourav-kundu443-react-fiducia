@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../images/logo.png";
 import LEDHighBay from "../images/ledhighbay.png";
 import { Link } from "react-router-dom";
+import data from '../data.json';
 
 const Navbar = () => {
     return (
@@ -18,16 +19,16 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse navLinks" id="navbarNav">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item  ms-3">
-                                <Link className="nav-link text-white" aria-current="page" to="/">Home</Link>
+                                <Link className="nav-link text-white" aria-current="page" to="/">{data.home}</Link>
                             </li>
                             <li className="nav-item ms-3">
-                                <Link className="nav-link text-white" to="/aboutus">About Us</Link>
+                                <Link className="nav-link text-white" to="/aboutus">{data.aboutus}</Link>
                             </li>
                             <li className="nav-item ms-3">
-                                <Link className="nav-link text-white" to="/productconfigurator">Product Configurator</Link>
+                                <Link className="nav-link text-white" to="/productconfigurator">{data.productfigurator}</Link>
                             </li>
                             <li className="nav-item ms-3">
-                                <Link className="nav-link text-white" to="/contactus">Contact Us</Link>
+                                <Link className="nav-link text-white" to="/contactus">{data.contactus}</Link>
                             </li>
                         </ul>
                     </div>
@@ -37,9 +38,9 @@ const Navbar = () => {
                 <div className="container my-container">
                     <div className="row justify-content-evenly pb-5">
                         <div className="col-md-5 col-sm-8" id="my-banner-text">
-                            <h1 className="mb-4">Electronic <br/> Manufacturing <br/> Services made Simpler</h1>
-                            <p className ="mb-5 mt-4">We strive to be your trusted electronics manufacturing services provider.Own product of global standard at competitive rates</p>
-                            <button className ="btn my-btn">Start Building Your Brand</button>
+                            <h1 className="mb-4">{data.bannerHeading}</h1>
+                            <p className ="mb-5 mt-4">{data.bannerText}</p>
+                            <button className ="btn my-btn">{data.buttonTextOne}</button>
                             </div>
                             <div className ="col-md-5 col-sm-8 my-slide" id="my-slide">
                             <div id="carouselExampleSlidesOnly" className ="carousel slide " data-bs-ride="carousel">
