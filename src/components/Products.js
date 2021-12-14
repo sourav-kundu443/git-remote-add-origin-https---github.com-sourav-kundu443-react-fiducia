@@ -4,15 +4,14 @@ import LedLight from "../images/ledlight.png";
 import LedHighBay from "../images/ledhighbay.png";
 import {Link} from "react-router-dom";
 
-import data from "../data.json";
 
 const Products = () => {
   return (
     <div>
       <div className="row justify-content-center">
         <div className="col-8  text-center mt-5 mb-3">
-          <h3 className="b">{data.brand}</h3>
-          <p>{data.aboutbrand}</p>
+          <h3 className="b">Fiducia</h3>
+          <p>The trust is in the name. A home-grown startup, Fiducia - Powered by LeSol, engages with the brands to give identity to the products. A simple configurator enables you to put your brand to any product and start marketing from the word get-go. </p>
         </div>
       </div>
 
@@ -20,26 +19,26 @@ const Products = () => {
         <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={TubeLight} className="img-fluid card-image" alt="" />
           <div className="quickShop">
-          <Link className="productLink" to="/tubelight">{data.quickshop}</Link>
+          <Link className="productLink" to="/tubelight">Quick Shop</Link>
           </div>
-          <p className="text-uppercase">{data.productdataoOne.productseller}</p>
-          <h4>{data.productdataoOne.productbrand}</h4>
+          <p className="text-uppercase">old faithful shop</p>
+          <h4>Tube Light</h4>
         </div>
         <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={LedLight} className="img-fluid card-image" alt="" />
           <div className="quickShop">
-          <Link className="productLink" to="/streetlight">{data.quickshop}</Link>
+          <Link className="productLink" to="/streetlight">Quick Shop</Link>
           </div>
-          <p className="text-uppercase">{data.productdataoTwo.productseller}</p>
-          <h4>{data.productdataoTwo.productbrand}</h4>
+          <p className="text-uppercase">old faithful shop</p>
+          <h4>Street Light</h4>
         </div>
         <div className="col-md-3 col-8 justify-item-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={LedHighBay} className="img-fluid card-image" alt="" />
           <div className="quickShop">
-          <Link className="productLink" to="/highbaylight">{data.quickshop}</Link>
+          <Link className="productLink" to="/highbaylight">Quick Shop</Link>
           </div>
-          <p className="text-uppercase">{data.productdataoThree.productseller}</p>
-          <h4>{data.productdataoThree.productbrand}</h4>
+          <p className="text-uppercase">old faithful shop</p>
+          <h4>High Bay Light</h4>
         </div>
       </div>
       <div class="view-more">

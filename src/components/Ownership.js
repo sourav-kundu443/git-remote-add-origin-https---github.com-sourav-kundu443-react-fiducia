@@ -3,15 +3,13 @@ import Design from "../images/design.png";
 import Sampling from "../images/sampling.png";
 import Quality from "../images/quality.png";
 
-import data from "../data.json";
-
 const Ownership = () => {
   return (
     <div>
       <div class="row justify-content-center ownership">
         <div class="col-sm-12 col-lg-8 col-md-8 text-center mt-5 mb-3">
-          <h3>{data.completeownership}</h3>
-          <p>{data.ownership}
+          <h3>Complete Ownership</h3>
+          <p>From Design to Fulfilment We assume total responsibility and ownership from Design to Fulfilment to Reverse Logistics. Leave your headache to us and just market3 your brand.
           </p>
         </div>
       </div>
@@ -22,33 +20,33 @@ const Ownership = () => {
 
         <div class="col-md-2 col-sm-8 mt-3 sm-card text-center">
           <img src={Design} class="img-fluid" width="50" alt="" />
-          <h5 class="text-uppercase">{data.designcard.heading}</h5>
-          <p>{data.designcard.text}</p>
+          <h5 class="text-uppercase">Design</h5>
+          <p>Use our superior product configurator to design the product you want your brand on.</p>
         </div>
 
         <div class="col-md-2 col-sm-8 mt-3 sm-card text-center">
           <img src={Sampling} class="img-fluid" width="50" alt="" />
-          <h5>{data.samplingcard.heading}</h5>
-          <p>{data.samplingcard.text}</p>
+          <h5>Sampling & Cost</h5>
+          <p>Promptly get samples of product configured.</p>
         </div>
 
         <div class="col-md-2 col-sm-8 mt-3 sm-card text-center">
           <img src={Design} class="img-fluid" width="50" alt="" />
-          <h5>{data.certificationcard.heading}</h5>
-          <p>{data.certificationcard.text}</p>
+          <h5>Certification</h5>
+          <p>Once you approve the samples, our team quickly gets to the job of certifications such as BIS, BEE, MNRE, UL, VDE, CE, etc of your product to ensure that it fully complies with the local law</p>
         </div>
 
         <div class="col-md-2 col-sm-8 mt-3 sm-card text-center">
           <img src={Design} class="img-fluid" width="50" alt="" />
-          <h5>{data.productioncard.heading}</h5>
-          <p>{data.productioncard.text}</p>
+          <h5>Production</h5>
+          <p>Our production team will work alongside the certification team and undertake production immediately.</p>
         </div>
 
         <div class="col-md-2 col-sm-8 mt-3 sm-card text-center">
           <img src={Quality} class="img-fluid" width="50" alt=""
           />
-          <h5>{data.qualitycard.heading}</h5>
-          <p>{data.qualitycard.text}</p>
+          <h5>Quaity Control</h5>
+          <p>All our vendors and suppliers are onboarded after through check on quality and production capabilities. Be rest assured that our quality will be of global standards.</p>
         </div>
 
         <div class="text-center mt-auto mb-auto">

@@ -1,8 +1,8 @@
 import React from "react";
 import LedTubeLight from "../images/ledtubelight.png";
+import { Link } from "react-router-dom";
 import Logo from "../images/logo.png";
-import { Link } from "react-router-dom"
-import data from '../data.json';
+import data from '../data.js';
 
 const Footer = () => {
   return (
@@ -16,10 +16,7 @@ const Footer = () => {
           </div>
           <div className="row">
             <div className="col-10 mt-4">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
             </div>
           </div>
           <div className="row">
@@ -43,7 +40,7 @@ const Footer = () => {
         <div className="col-md-3 mt-3">
           <div className="row">
             <div className="col-md-12">
-              <h5>{data.gallery}</h5>
+              <h5>Gallery</h5>
               <div classNameName="footer-images">
                 <Link to="/insta1">
                   <img src={LedTubeLight} className="img-fluid mt-2 insta-img" alt="" />
@@ -73,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" newsletter">
-            <h5>{data.newsletter}</h5>
+            <h5>Newsletter</h5>
             <div className="email-newsletter mt-3 mb-3">
               <input type="email" name="email" id="" placeholder="Enter email here" />
               <button type="submit" className="newsletter-button rounded-circle">
@@ -83,37 +80,37 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-md-4 mt-3 mb-4">
-          <h5>{data.usefulllinks}</h5>
+          <h5>Usefull Links</h5>
           <div classNameName="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/">{data.home}</Link>
+            <Link className="text-white footer-link" to="/">Home</Link>
           </div>
           <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/aboutus">{data.aboutus}</Link>
+            <Link className="text-white footer-link" to="/aboutus">About Us</Link>
           </div>
           <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/productconfigurator">{data.productfigurator}</Link>
+            <Link className="text-white footer-link" to="/productconfigurator">Product Configurator</Link>
           </div>
           <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/contactus">{data.contactus}</Link>
+            <Link className="text-white footer-link" to="/contactus">Contact Us</Link>
           </div>
           <div className="">
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/support">{data.support}</Link>
+            <Link className="text-white footer-link" to="/support">Support</Link>
           </div>
           <div>
             <i className="bi bi-chevron-double-right"></i>
-            <Link className="text-white footer-link" to="/feedback">{data.feedback}</Link>
+            <Link className="text-white footer-link" to="/feedback">Feedback</Link>
           </div>
         </div>
       </div>
 
       <div className="row my-copyright">
         <div className="col-12 text-center">
-          <p>{data.copyright}</p>
+          <p>Copyright © 2021 FIDUCIA. All Rights Reserved</p>
         </div>
       </div>
     </div>
