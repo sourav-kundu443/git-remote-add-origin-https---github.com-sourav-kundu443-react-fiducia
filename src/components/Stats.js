@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
     return (
-        <div class="row justify-content-center pt-5 pb-5 stats-row">
+        <div class="row pt-5 pb-5 stats-row">
             <div class="col-md-3 col-10 stats-column text-center mt-5" id="brands-served">
                 <h4>50+</h4>
                 <p className="text-capitalize">brands served</p>

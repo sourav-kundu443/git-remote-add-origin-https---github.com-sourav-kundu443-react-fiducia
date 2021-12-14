@@ -37,6 +37,8 @@
 }
 
 .stats-row {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #f1f1f1;
 }
 
@@ -69,6 +71,10 @@
   font-weight: 600;
 }
 
+.product-row {
+  display: flex;
+  justify-content: space-evenly;
+}
 .quickShop {
   opacity: 0;
   background-color: #431C75CC;
@@ -101,6 +107,10 @@
 .ownership {
   background-color: #C1A0EDE5;
 }
+.ownershipCard {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .sm-card {
   background-color: #ffffff;
@@ -119,17 +129,9 @@
 .sm-card p {
   font-size: 11px;
 }
-#my-arrow{
+.my-arrow{
   background-color: #5F27CD;
   color: #ffffff;
-  width: 40px;
-  height: 40px;
-  padding: 5px 0 0 0;
-  margin-left: 10px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  
 }
 
 .my-footer {
@@ -166,6 +168,7 @@
 }
 .newsletter {
   width: 90%;
+  margin-top: 10px;
 }
 .email-newsletter {
   width: 90%;
@@ -180,7 +183,7 @@
   border-radius: 30px;
   border: none;
   background-color: #252429;
-  padding: 0 10px;
+  padding: 5px 10px;
   font-size: 15px;
   letter-spacing: 1.2px;
   outline: none;
@@ -199,6 +202,7 @@
   font-size: 18px;
   text-align: center;
   margin-top: 2.5px;
+  cursor: pointer;
 }
 
 .lower-section {
@@ -222,14 +226,23 @@
 }
 
 .insta-img {
-  width: 70px;
+  width: 60px;
+  margin-left: 2px;
 }
 .logo-image{
   width: 200px;
 }
+.footer-link{
+  text-decoration: none;
+}
+.my-footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 768px){
-  #my-arrow {
-      opacity: 0;
+  .my-arrow {
+      display: none;
   }
 
   .my-container h1 {
@@ -283,22 +296,19 @@
   .logo-image{
       width: 120px;
       margin: 15px 0 10px 0;
-      /* size: 60%; */
   }
   .my-footer .footer-logo {
       width: 90px;
   }
+  .my-copyright p {
+    font-size: 11px;
+  }
   
 }
+
 @media only screen and (max-width: 992px){
-  #my-arrow {
+  .my-arrow {
       display: none;
   }
   
 }
-/* 
-@media screen and (max-width: 1200px){
-  .nav-menu {
-      margin: 0 50px;
-  }
-} */

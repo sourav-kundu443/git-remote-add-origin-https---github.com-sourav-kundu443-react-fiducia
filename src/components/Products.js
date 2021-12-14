@@ -16,7 +16,7 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="row justify-content-center mb-5 mt-3">
+      <div className="row mb-5 mt-3 product-row">
         <div className="col-md-3 col-8 justify-content-center text-center pt-3 pb-3  border mt-3 my-card">
           <img src={TubeLight} className="img-fluid card-image" alt="" />
           <div className="quickShop">

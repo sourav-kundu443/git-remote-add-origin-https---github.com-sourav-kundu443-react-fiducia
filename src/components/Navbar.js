@@ -24,7 +24,7 @@ const Navbar = () => {
                                 <Link className="nav-link text-white" to="/aboutus">About Us</Link>
                             </li>
                             <li className="nav-item ms-3">
-                                <Link className="nav-link text-white" to="/productconfurator">Product Configurator</Link>
+                                <Link className="nav-link text-white" to="/productconfigurator">Product Configurator</Link>
                             </li>
                             <li className="nav-item ms-3">
                                 <Link className="nav-link text-white" to="/contactus">Contact Us</Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
             </nav>
             <div className="banner-image w-100 vh-100">
                 <div className="container my-container">
-                    <div className="row justify-content-evenly">
+                    <div className="row justify-content-evenly pb-5">
                         <div className="col-md-5 col-sm-8" id="my-banner-text">
                             <h1 className="mb-4">Electronic <br/> Manufacturing <br/> Services made Simpler</h1>
                             <p className ="mb-5 mt-4">We strive to be your trusted electronics manufacturing services provider.Own product of global standard at competitive rates</p>
