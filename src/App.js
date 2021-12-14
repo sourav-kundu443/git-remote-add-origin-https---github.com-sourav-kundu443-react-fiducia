@@ -1,7 +1,8 @@
 import './App.css';
 import Home from './components/Home';
-import AboutUs from './components/ContactUs';
-import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
+import ContactUs from './components/sub components/ContactUs';
+import AboutUs from './components/sub components/AboutUs';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
@@ -9,14 +10,17 @@ function App() {
     <div classNameName="App">
       <Router>
         <div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/contactus">
-            <AboutUs />
-          </Route>
-        </Switch>  
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/contactus">
+              <ContactUs />
+            </Route>
+            <Route exact path="/aboutus">
+              <AboutUs />
+            </Route>
+          </Switch>
         </div>
       </Router>
     </div>
