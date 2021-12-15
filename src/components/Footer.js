@@ -2,7 +2,7 @@ import React from "react";
 import LedTubeLight from "../images/ledtubelight.png";
 import { Link } from "react-router-dom";
 import Logo from "../images/logo.png";
-import data from '../data.js';
+// import data from '../data.js';
 
 const Footer = () => {
   return (

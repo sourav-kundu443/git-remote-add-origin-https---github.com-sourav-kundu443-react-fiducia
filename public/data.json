@@ -1,0 +1,20 @@
+[
+    {
+        "productId": 1,
+        "productImage": "../src/images/tubelight.png",
+        "productbrand": "Tube Light",
+        "productseller": "old faithful shop"
+    },
+    {
+        "productId": 2,
+        "productImage": "../src/images/ledlight.png",
+        "productbrand": "Street Light",
+        "productseller": "old faithful shop"
+    },
+    {
+        "productId": 3,
+        "productImage": "../src/images/ledhighbay.png",
+        "productbrand": "High Bay Light",
+        "productseller": "old faithful shop"
+    }
+]
